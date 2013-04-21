@@ -2,7 +2,7 @@
 /**
  * @access	Public
  * @version	1.0
- * @Owner	Utkarsh Singh
+ * @Author	Utkarsh Singh
  * @Details	This class is responsible for NyTimesNews API Call
  **/
 Class NyTimesNews {
@@ -19,7 +19,7 @@ Class NyTimesNews {
      */
     public function __construct(){
 		$this->newsArr		= array();	
-		$this->flag			= 0;
+		$this->flag		= 0;
 		$this->apiKey		= '<use your API key here>';
 		$this->apiBaseUrl	= "http://api.nytimes.com/svc/news/v3/content/all/all.json?";	
     }
@@ -29,7 +29,7 @@ Class NyTimesNews {
      *@function to reset the flag
      */
     public function __resetFlag(){	
-		$this->flag			= 0;
+		$this->flag		= 0;
     }	
     
     /*@params
