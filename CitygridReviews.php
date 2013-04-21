@@ -107,14 +107,14 @@ Class CitygridReviews {
 			$totalHits = (isset($searchResponse['results']['total_hits'])) ? $searchResponse['results']['total_hits'] : 0;	    
 			
 			if($this->flag==$totalHits){		    
-			//return $this->searchReviewsArr;
-			$CitygridReviewsModelObj->batchInsert($this->searchReviewsArr);
-			echo "success";
+				//return $this->searchReviewsArr;
+				$CitygridReviewsModelObj->batchInsert($this->searchReviewsArr);
+				echo "success";
 			}
 			else{
-			$page++;
-			set_time_limit(0);
-			return $this->searchReviews($what, $tag, $where, $listing_id, $customer_only, $rating, $days, $page, $rpp, $format, $placement, $callback, $i, $review_type, $sort, $CitygridReviewsModelObj, $existingReviewsRecordsArray);
+				$page++;
+				set_time_limit(0);
+				return $this->searchReviews($what, $tag, $where, $listing_id, $customer_only, $rating, $days, $page, $rpp, $format, $placement, $callback, $i, $review_type, $sort, $CitygridReviewsModelObj, $existingReviewsRecordsArray);
 			}	    
 		}catch(Exception $e){
 			return 'Exception';
