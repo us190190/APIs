@@ -1,4 +1,4 @@
 APIs
 ====
 
-Here are classes of various APIs to pull there data, coded in PHP.
+Here are classes of various APIs to pull their data, coded in PHP.
