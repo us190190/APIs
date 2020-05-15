@@ -1,4 +1,4 @@
 APIs
 ====
 
-Here are classes of various APIs to pull their data, coded in PHP.
+Scripts to scrap data from various APIs
